@@ -48,8 +48,7 @@ class SourceCodeMenu {
         textareaNode.style = "visibility:hidden;";
       });
     } else {
-      const editorNode =
-        document.getElementsByClassName("w-e-text-container")[0];
+      const editorNode = editor.getEditableContainer();
       const textareaNode =
         document.getElementById("textarea-source") ||
         document.createElement("textarea");
